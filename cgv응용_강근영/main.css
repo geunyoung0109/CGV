@@ -1,0 +1,156 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
+
+/*전체배경색*/
+body {
+    background: url(img/int1.jpg) no-repeat fixed top/cover;
+    background-color: rgba(255, 255, 255, 0.44);
+
+}
+
+/*A.상단영역*/
+p {
+    position: relative;
+    top: -50px;
+    padding: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff003b;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    font-family: "Castoro";
+    line-height: 40px;
+    letter-spacing: 13px;
+
+}
+
+
+
+/*동영상영역*/
+#screen {
+    position: absolute;
+    top: 136px;
+    left: 500px;
+    /*나의 부모는? #cont*/
+    width: 701px;
+    height: 398px;
+    background-color: #000;
+}
+
+/*스크린 아이프레임*/
+#screen iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/*줄거리*/
+span{
+    font-size: 17px;
+    position: absolute;
+    bottom: 80px;
+    color: #fff;
+    left: 100px;
+}
+
+
+}
+
+.f1{
+    font-weight: bold;
+}
+
+
+/*4. 영화선택메뉴*/
+.mlist {
+    position: absolute;
+    /*부모자격-.movtxt의 부모*/
+    bottom: 75px;
+    right: 252px;
+   
+    overflow: hidden;
+   
+}
+
+.mlist ul {
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    overflow: hidden;
+    /*float자식요소 높이값 인식*/
+   
+}
+
+
+.mlist ul > li {
+    float: left;
+    /*옆으로흐르게*/
+    padding: 0 10px;
+    /*패딩 양쪽 10px*/
+
+   
+}
+
+/*썸네일 이미지 크기지정으로 li크기만들기*/
+.mlist img {
+    width: 120px;
+    height: 150px;
+}
+
+/*5. 영화정보박스*/
+ol.movtxt {
+    position: absolute;
+    
+    top: 100%;
+
+    
+    /*크기지정-이미지와 동일 크기*/
+    width: 120px;
+    height: 150px;
+    
+    /*글자셋팅*/
+    text-align: center;
+   
+    /*반투명배경색*/
+    background-color: rgba(0, 0, 0, 0.7);
+    
+    
+    
+    /*3無*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    /*트랜지션*/
+    transition: top .4s ease-out;
+
+}
+
+/*메뉴 li에 마우스 오버시 .movtxt 올라오기*/
+.mlist>ul>li:hover .movtxt{
+    top: 0;
+}
+
+
+
+.movtxt li:first-child {
+    margin-top: 30px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}
+.movtxt li:nth-child(2) {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 17px;
+}
+
+
+
+
+
